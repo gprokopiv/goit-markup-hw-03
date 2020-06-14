@@ -7,28 +7,49 @@
     --portfolio-background-color: #F5F4FA;
 }
 
-.home-page {
-    background-color: var(--title-text-color);
-    color: var(--primary-text-color);
+.body {
+    /* background-color: var(--title-text-color);
+    color: var(--primary-text-color); */
     font-family: "Raleway","Roboto" sans-serif;
 }
-    
+   
 .container {
     outline: solid tomato;
     margin: 0px;
     padding: 0px ;
-    max-width: 1600px;
+    /* max-width: 1600px; */
     width: 1200px;
 }
 /* header */
+header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
 
-.menu-header{
+header .container {
     display: flex;
     align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.menu {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px ;
+
 
 }
 .logo { 
-    margin-right: 72px;
+    margin-right: 85px;
+    margin-left: 210px;
 
     color: #000000;
     font-family: Raleway;
@@ -46,7 +67,6 @@ ul {
     list-style: none;
 }
 
-
 /*navigation on the site */
 .menu {
     display: flex;
@@ -63,25 +83,16 @@ site-nav .item:not( :last-child) {
 } */
 
 .menu .item + .item {
-    margin-left: 45px;
-}
-.menu .item {
-    display: block;
-    padding-bottom: 48px;
+    margin-left: 50px;
 }
 
-.menu .link {
+li .link {
     color: var(--primary-text-color);
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     text-decoration: none;
 }
 
-.menu .link:hover, 
-.menu .link:focus {
+li .link:hover, 
+li .link:focus {
     color: var(--accent-color);
 }
 
@@ -90,28 +101,21 @@ site-nav .item:not( :last-child) {
 }
 /* email and address */
 
-.info-menu {
+.contact {
     display: flex;
-    margin-left: auto;
+    /* margin-left: auto;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin: 0px;
+    padding: 0px ;     */
 }
 
-.info-menu .link {
-    display: flex;
-    padding-bottom: 48px;
-
+ .contact .link {
     color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
 }
-.info-menu .link:hover, 
-.info-menuv .link:focus {
- color: var(--accent-color); 
-}
- .info-menu .item + .item{
-     margin-left: 20px;
+
+ .contact .item + .item {
+     margin-right: 20px;
  }
 
 /* Styles for the main page of html */
