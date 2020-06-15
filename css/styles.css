@@ -7,18 +7,28 @@
     --portfolio-background-color: #F5F4FA;
 }
 
-.body {
-    /* background-color: var(--title-text-color);
-    color: var(--primary-text-color); */
+body {
+    color: var(--primary-text-color); 
     font-family: "Raleway","Roboto" sans-serif;
 }
    
+ul {
+    list-style: none;
+}
+a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+a:hover, 
+a:focus {
+    color: var(--accent-color);
+}
+
 .container {
     outline: solid tomato;
     margin: 0px;
-    padding: 0px ;
-    /* max-width: 1600px; */
-    width: 1200px;
+    padding: 0 15px;
+    width: 1170px;
 }
 /* header */
 header {
@@ -32,24 +42,16 @@ header {
 header .container {
     display: flex;
     align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto; 
-}
-.menu {
-    display: flex;
-    align-items: center;
-    margin: 0px;
-    padding: 0px ;
-
+    margin: 0 200px; 
+    padding-top: ;
 
 }
+
+/*header logo*/
+
 .logo { 
     margin-right: 85px;
-    margin-left: 210px;
+    margin-left: auto;
 
     color: #000000;
     font-family: Raleway;
@@ -59,73 +61,72 @@ header .container {
     letter-spacing: 0.03em;
     text-decoration: none;
 }
+header .logo:hover, 
+header .logo:focus {
+    color: var(--primary-text-color);
+
+}
 .logo .web {
     color: var(--accent-color);
    }
-
-ul {
-    list-style: none;
-}
-
-/*navigation on the site */
+   /* menu */
 .menu {
     display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
 }
-/*  site-nav .item {
-    margin-left: 40px;
-}
-site-nav .item:last-child {
-    margin-left: 0px;
-}
-
-site-nav .item:not( :last-child) { 
-        margin-left: 40px;
-} */
-
 .menu .item + .item {
     margin-left: 50px;
-}
-
-li .link {
-    color: var(--primary-text-color);
-    text-decoration: none;
-}
-
-li .link:hover, 
-li .link:focus {
-    color: var(--accent-color);
 }
 
 .menu .current {
     color: var(--accent-color);
 }
+.menu .link {
+    display: block;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
 /* email and address */
 
 .contact {
     display: flex;
-    /* margin-left: auto;
-    justify-content: flex-end;
-    align-items: baseline;
-    margin: 0px;
-    padding: 0px ;     */
+    margin: 0 auto 0 280px;
+    padding: 0;
 }
 
  .contact .link {
     color: var(--secondary-text-color);
 }
 
- .contact .item + .item {
+ .contact .item {
      margin-right: 20px;
+     
+ }
+ .contact .icon {
+     margin-right: 10px;
+
+
  }
 
+ 
 /* Styles for the main page of html */
-.hero{
+.hero {
+    padding-top: 200px;
+    padding-bottom: 280px;
+    margin: 0px;
+    
+    background-color: var(--secondary-text-color);
     text-align: center;
 }
 /* hero title */
 .hero-title {
+    margin-top: 0;
     margin-bottom: 30px;
-    margin-top: auto;
+    
     color: var(--title-text-color);
     
     font-weight: 900;
@@ -133,25 +134,29 @@ li .link:focus {
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
     
-    background-color: var(--secondary-text-color);
+/* button */
+.button {
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: inline-block;
+    margin: 0;
+    
+    color: var(--title-text-color);
+    background-color: var(--accent-color);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    
 }
-.section .no-padding {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-/*title that we'll hide*/
-.no-margin {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    }
-
-/* titles for sections */
-.section-title {
-
+h2 {
     margin-top: 0px;
     margin-bottom: 50px;
+
     color: var(--primary-text-color);
     font-weight: bold;
     font-size: 36px;
@@ -159,16 +164,38 @@ li .link:focus {
     text-align: center;
     letter-spacing: 0.03em;
 }
-/* features */
-.feature-list .title {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: var(--primary-text-color);
+h3 {
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+}
+/* features */
+.features .container {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.features h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.feature-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.feature-list .item:not( :last-child) {
+    margin-right: 30px;
+}
+.feature-list .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+    
 }
 .feature-list .descriptions {
     margin-top: 0px;
@@ -241,22 +268,6 @@ social-links li a:focus {
 
 }
 
-/* button */
-.button {
-    border-radius: 4px;
-    padding: 10px 32px;
-    display: inline-block;
-    
-    color: var(--title-text-color);
-    
-    background-color: var(--accent-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
-    letter-spacing: 0.06em;
-    text-decoration: none;
-    
-}
 
 
     
