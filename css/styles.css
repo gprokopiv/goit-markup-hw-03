@@ -8,15 +8,19 @@
 }
 
 body {
+   
     color: var(--primary-text-color); 
     font-family: "Raleway","Roboto" sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
    
 ul {
     list-style: none;
 }
 a {
-    color: var(--primary-text-color);
     text-decoration: none;
 }
 a:hover, 
@@ -25,29 +29,27 @@ a:focus {
 }
 
 .container {
-    outline: solid tomato;
-    margin: 0 auto 94px auto;
-    padding: 0 15px;
-    width: 1170px;
+    /* outline: solid tomato; */
+    margin: 0 auto;
+    padding: 94px 15px 94px 15px;
+    width: 1200px;
 }
 /* header */
-header {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+.header {
+  display: block;  
 }
 
 header .container {
     display: flex;
     align-items: center;
-    margin-bottom: 0;
+    justify-content: space-between;
+    padding-bottom: 0;
+    padding-top: 0;
+
 
 }
 
 /*header logo*/
-
 .logo { 
     margin-right: 85px;
     margin-left: auto;
@@ -183,9 +185,10 @@ h3 {
 
 /* features */
 .features h2 {
+    display: none;
     margin: 0;
     padding: 0;
-    opacity: 0;
+   
 }
 
 /* .feature-list {
@@ -286,7 +289,15 @@ background-color: #E5E5E5;
 }
 
 
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+    padding-top: 0;
 
+
+}
     
 /* Styles for Portfolio */
 

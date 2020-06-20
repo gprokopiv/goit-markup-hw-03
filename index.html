@@ -7,7 +7,6 @@
     <title>Web Studio v.1</title> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />      
     <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
-
     <link rel="stylesheet" href="./css/styles.css" />
     
 </head>
@@ -15,8 +14,8 @@
 <body>
     <!---the header of the site-->
   
-    <header>
-    <div class="container"> 
+    <header class="header">
+    <div class="container">  
          <nav>
             <ul class="menu">
                 <li><a class="logo" href="#"><span class="web">Web</span>Studio</a></li>
@@ -210,10 +209,11 @@
     </main>
    
     <!---footer-->
-    <footer>
+    <footer class="container" >
         <!---address-->
-        <section>
-            <a href="#"> <span class="logo-web">Web</span> <span class="logo-studio">Studio</span></a>
+        <div >
+        <section >
+                <a class="logo" href="#"><span class="web">Web</span>Studio</a>
             <address>
                 <p>г. Киев, пр-т Леси Украинки, 26<br />
                     <a href="mailto:info@example.com">info@example.com</a><br />
@@ -221,27 +221,26 @@
             </address>
         </section>
         <!---social networks-->
-
-            <section>
-                <p><b>присоединяйтесь</b></p>
-                <ul class="social-links">
-                        <li><a href="#" aria-label="Instagram" class="link"> Instagram</a></li>
-                        <li><a href="#" aria-label="Twitter" class="link"> Twitter</a></li>
-                        <li><a href="#" aria-label="Facebook"class="link"> Facebook</a></li>
-                        <li><a href="#" aria-label="Linkedin"class="link"> Linkedin</a></li>
-
-                </ul>
+         <section>
+                    <b>присоединяйтесь</b>
+                    <ul class="social-links">
+                            <li><a href="#" aria-label="Instagram" class="link"> Instagram</a></li>
+                            <li><a href="#" aria-label="Twitter" class="link"> Twitter</a></li>
+                            <li><a href="#" aria-label="Facebook"class="link"> Facebook</a></li>
+                            <li><a href="#" aria-label="Linkedin"class="link"> Linkedin</a></li>
+    
+                    </ul>
             </section>
      
         <!---subscription-->
             <section>
-                <p><b>Подпишитесь на рассылку</b></p>
+                <b>Подпишитесь на рассылку</b>
                 <input placeholder="E-mail">
                 <button class="button">Подписаться</button>
             </section>
 
         <p>2020 | Developed by GoIT Students </p>
-        
+        </div>   
     </footer>
 </body>
 
