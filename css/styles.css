@@ -18,8 +18,7 @@
 }
 
 
-
-    
+   
 .container {
     outline: solid tomato; 
     margin: 0 auto;
@@ -41,7 +40,19 @@
 } */
 
 
+.active {
+    color: var(--accent-color);
+}
 
+.link {
+    text-decoration: none;
+    color: var(--primary-text-color );
+
+} 
+/* .link:hover, 
+.link:focus {
+    color: var(--accent-color);
+}  */
 /* header */
 
 .header .container {
@@ -55,11 +66,15 @@
     letter-spacing: 0.02em;
 
 }
+.header-list {
+
+}
 
 /*header logo*/
 .logo { 
     margin-right: 85px;
     margin-left: auto;
+    align-self: baseline;
 
     color: #000000;
     font-family: Raleway;
@@ -79,7 +94,8 @@
    /* menu */
 .menu {
     display: flex;
-    margin: 0;
+    /* margin: 0; */
+    margin: 0 auto;
     padding: 0;
 }
 /* .menu-item:not(:last-child) {
@@ -96,16 +112,18 @@
 
     color: var(--primary-text-color);
 }
-
+/* 
 .active {
     color: var(--accent-color);
-}
+} */
 
 /* email and address */
 
 .contact {
     display: flex;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
+    /* margin-left: auto;
+    margin-right: 0; */
     padding: 0;
 }
 
@@ -120,13 +138,16 @@
      margin-right: 10px;
  }
 
- .link {
+ .active {
+    color: var(--accent-color);
+}
+ /* .link {
     text-decoration: none;
 } 
 .link:hover, 
 .link:focus {
     color: var(--accent-color);
-} 
+}  */
 
 /* Styles for the main page of html */
 /* Hero section */
@@ -155,7 +176,7 @@
     
 /* button */
 .button {
-    border-radius: 4px;
+    border: 1px solid var(--accent-color);
     padding: 10px 32px;
     
     color: var(--title-text-color);
@@ -192,6 +213,16 @@
     text-transform: uppercase;
 
 }
+.section-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.section-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 
 /* features */
@@ -200,14 +231,12 @@
     display: none;
 
 }
-.features-list {
+/* .features-list, {
     display: flex;
     margin: 0;
     padding: 0;
-}
-.features-item:not(:last-child) {
-    margin-right: 30px;
-}
+} */
+
 
 .features .image {
    padding: 25px 100px;
@@ -218,7 +247,7 @@
 }
   
 .features-descriptions {
-    margin: 10px 0 10px;
+    margin: 10px 0 10px 0;
     color: var(--secondary-text-color);
 }
 
@@ -228,44 +257,44 @@
     margin: 0;
     padding: 0;
 } */
+.products .container {
+    padding-top: 0;
+}
 
-.we-do h3 {
+.products .section-subtitle {
+    padding: 27px 0;
+    background-color: rgba(47, 48, 58, 0.8);
     color: var(--title-text-color);
     text-align: center;
 
 }
-.we-do .link{
-    padding: 27px 0;
-    margin: 0;
-    background-color: rgba(47, 48, 58, 0.8);
-}
 
 /* team list */
-.team .container {
-    padding: 94px 15px;
-    /* width: 100%;  */
+.team {
     background-color: var(--background-color);
+}
+.team .section-item {
+    background: var(--title-text-color);
+
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-text {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em;
-    text-decoration: none;
 }
+
 
 .name {
     margin-top: 0;
     margin-bottom: 10px;
-    color: var(--primary-text-color);
     font-weight: 500;
-    
 }
 .job {
     margin-top: 0;
     margin-bottom: 16px;
     color: var(--secondary-text-color);
-    font-weight: 400;
  
 }
 
@@ -278,11 +307,15 @@ social-links li a:focus {
 
 
 
-.social-links .link:hover,
+/* .social-links .link:hover,
 .social-links .link:focus {
     color: var(--accent-color);
 
-}
+} */
+.link:hover, 
+.link:focus {
+    color: var(--accent-color);
+} 
 
 .box {
     display: inline-block;
