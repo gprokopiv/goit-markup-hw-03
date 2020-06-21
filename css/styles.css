@@ -1,116 +1,91 @@
-
 :root {
     --primary-text-color: #212121;
     --title-text-color: #ffffff; 
     --accent-color:  #2196F3;
     --secondary-text-color: #757575;
-    --portfolio-background-color: #F5F4FA;
+    --background-color: #F5F4FA;
 }
+
 
 body {
    
     color: var(--primary-text-color); 
-    font-family: "Raleway","Roboto" sans-serif;
-    font-weight: 500;
+    font-family: "Roboto" sans-serif;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
-   
 ul {
     list-style: none;
 }
 a {
     text-decoration: none;
 }
+
 a:hover, 
 a:focus {
     color: var(--accent-color);
 }
-
 .container {
     /* outline: solid tomato; */
     margin: 0 auto;
     padding: 94px 15px 94px 15px;
     width: 1200px;
 }
+
+/* .list {
+    text-decoration: none;
+} */
+
 /* header */
 .header {
-  display: block;  
+ display: block;  
+
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
 }
 
-header .container {
+/*   
+.header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 0;
     padding-top: 0;
-
-
-}
+} */
 
 /*header logo*/
 .logo { 
-    margin-right: 85px;
-    margin-left: auto;
-
+   
     color: #000000;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-decoration: none;
 }
+.logo .logo-web {
+    color: var(--accent-color);
+}
+
 header .logo:hover, 
 header .logo:focus {
     color: var(--primary-text-color);
-
 }
-.logo .web {
-    color: var(--accent-color);
-   }
+
    /* menu */
-.menu {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    
-}
-.menu .item + .item {
-    margin-left: 50px;
-}
-
 .menu .current {
     color: var(--accent-color);
-}
-.menu .link {
-    display: block;
-    padding-top: 23px;
-    padding-bottom: 23px;
 }
 
 /* email and address */
 
 .contact {
-    display: flex;
-    margin: 0 auto 0 280px;
-    padding: 0;
+  color: var(--secondary-text-color);
 }
 
- .contact .link {
-    color: var(--secondary-text-color);
-}
-
- .contact-item {
-     margin-right: 20px;
-     
- }
- .contact .icon {
-     margin-right: 10px;
-
- }
 
  
 /* Styles for the main page of html */
@@ -351,3 +326,4 @@ footer .container {
 
 
 
+}
