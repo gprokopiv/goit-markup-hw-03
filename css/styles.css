@@ -77,7 +77,7 @@
     align-self: baseline;
 
     color: #000000;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -87,8 +87,8 @@
 .logo .logo-web {
     color: var(--accent-color);
    } */
-.logo:hover,
-.logo:focus {
+.logo-studio:hover,
+.logo-studio:focus {
     color: #000000;}
 
    /* menu */
@@ -312,33 +312,81 @@ social-links li a:focus {
     color: var(--accent-color);
 
 } */
+
+
+.clients .section-item {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    text-align: center;
+    background-color: #E5E5E5;
+}
+
 .link:hover, 
 .link:focus {
     color: var(--accent-color);
 } 
-
-.box {
-    display: inline-block;
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    width: 170px;
-height: 90px;
-text-align: center;
-background-color: #E5E5E5;
+.footer {
+    background-color: #2F303A;;
 }
-
-
-footer .container {
+.footer .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding-bottom: 0;
     padding-top: 0;
-
-
+    margin-top: 45px;
+} 
+/* .footer-info {
+    margin-top: 45px;
+} */
+.footer-info .logo-studio{
+    color: var(--title-text-color);
 }
-    
+.footer-info .logo:hover,
+.footer-info .logo:focus {
+    text-decoration: underline;
+} 
+.address-list {
+    display: inline-block;
+    margin-right: 69px; 
+    padding: 0;
+
+    font-style: normal;
+    color: var(--title-text-color);
+}
+.address .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-list {
+    margin-top: 57px;
+ }
+.footer-subtitle {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+.footer-list:not(:last-child) {
+    margin-right: 94px;
+}
+
+
+
+
+
+
+
+.copy{
+    display: block;
+}
 /* Styles for Portfolio */
 
 /*samples of projects*/
@@ -354,11 +402,11 @@ footer .container {
     letter-spacing: 0.03em;
 }
 
-.projects .list:hover,
+/* .projects .list:hover,
 .projects .list:focus {
     color: var(--title-text-color);
     background-color: var(--accent-color);
-}
+} */
 
 .example .title {
     color: var(--primary-text-color);

@@ -19,7 +19,9 @@
     <div class="container">  
          <nav>
             <ul class="menu list">
-                <li><a class="logo link" href="#"><span class="active">Web</span> Studio</a></li>
+                <li>
+                    <a class="logo link" href="#"><span class="active">Web</span> <span class="logo-studio">Studio</span> </a>
+                </li>
                 <li class="menu-item"><a class="menu-link link active" href="#">Студия</a></li>
                 <li class="menu-item"><a class="menu-link link" href="./portfolio.html">Портфолио</a></li>
                 <li class="menu-item"><a class="menu-link link" href="#">Контакты</a></li>
@@ -183,23 +185,23 @@
             <div class="container">          
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="section-list">
-                     <li class="box">
-                        <a href="#"> <img src="./images/Client_1.svg" alt="клиент1" /></a>
+                     <li class="section-item">
+                        <a class="link" href="#"> <img src="./images/Client_1.svg" alt="клиент1" /></a>
                     </li>
-                    <li class="item">
-                        <a href="#"> <img src="./images/Client_2.svg" alt="клиент2" /></a>
+                    <li class="section-item">
+                        <a class="link" href="#"> <img src="./images/Client_2.svg" alt="клиент2" /></a>
                     </li>
-                    <li class="item">
-                        <a href="#"> <img src="./images/Client_3.svg" alt="клиент3" /></a>
+                    <li class="section-item">
+                        <a class="link" href="#"> <img src="./images/Client_3.svg" alt="клиент3" /></a>
                     </li>
-                    <li class="item">
-                        <a href="#"> <img src="./images/Client_4.svg" alt="клиент4" /></a>
+                    <li class="section-item">
+                        <a class="link" href="#"> <img src="./images/Client_4.svg" alt="клиент4" /></a>
                     </li>
-                    <li class="item">
-                        <a href="#"> <img src="./images/Client_5.svg" alt="клиент5" /></a>
+                    <li class="section-item">
+                        <a class="link" href="#"> <img src="./images/Client_5.svg" alt="клиент5" /></a>
                     </li>
-                    <li class="item">
-                        <a href="#"> <img src="./images/Client_6.svg" alt="клиент6" /></a>
+                    <li class="section-item">
+                        <a class="link" href="#"> <img src="./images/Client_6.svg" alt="клиент6" /></a>
                     </li>
                 </ul>
             </div>
@@ -208,38 +210,48 @@
     </main>
    
     <!---footer-->
-    <footer class="container" >
-        <!---address-->
-        <div >
-        <section >
-                <a class="logo" href="#"><span class="web">Web</span>Studio</a>
-            <address>
-                <p>г. Киев, пр-т Леси Украинки, 26<br />
-                    <a href="mailto:info@example.com">info@example.com</a><br />
-                    <a href="tel:+38-096-111-11-11">+38 096 111 11 11</a><br /></p>
+    <footer class="footer">
+        <div class="container">
+
+        <div class="footer-info">
+            <a class="logo link" href="#"><span class="active">Web</span> <span class="logo-studio">Studio</span> </a>
+            <!---address-->
+            <address class="address">
+                <ul class="address-list list">
+                    <li class="address-item">г. Киев, пр-т Леси Украинки, 26</li>
+                    <li class="address-item"> <a class="link" href="mailto:info@example.com">info@example.com</a>
+                    </li>                    
+                    <li class="address-item"><a class="link" href="tel:+38-096-111-11-11">+38 096 111 11 11</a></li>
+                </ul>  
             </address>
-        </section>
-        <!---social networks-->
-         <section>
-                    <b>присоединяйтесь</b>
-                    <ul class="social-links">
-                            <li><a href="#" aria-label="Instagram" class="link"> Instagram</a></li>
-                            <li><a href="#" aria-label="Twitter" class="link"> Twitter</a></li>
-                            <li><a href="#" aria-label="Facebook"class="link"> Facebook</a></li>
-                            <li><a href="#" aria-label="Linkedin"class="link"> Linkedin</a></li>
-    
-                    </ul>
-            </section>
+        </div>
+                <!---social networks-->
+         <div class= "footer-list">
+            <b class="footer-subtitle">присоединяйтесь</b>
+            <ul class="social-links">
+                    <li class="list"><a class="link" href="#" aria-label="Instagram"> Instagram</a></li>
+                    <li class="list"><a class="link" href="#" aria-label="Twitter"> Twitter</a></li>
+                    <li class="list"><a class="link" href="#" aria-label="Facebook"> Facebook</a></li>
+                    <li class="list"><a class="link" href="#" aria-label="Linkedin"> Linkedin</a></li>
+
+            </ul>
+         </div>>
+                    
      
         <!---subscription-->
-            <section>
-                <b>Подпишитесь на рассылку</b>
+            <div class="footer-list">
+                <b class="footer-subtitle">Подпишитесь на рассылку</b>
                 <input placeholder="E-mail">
-                <button class="button">Подписаться</button>
-            </section>
+                <button type="button" class="button">Подписаться</button>
+            </div>
+<div class="copy"> 
+    <p>2020 | Developed by GoIT Students </p>
 
-        <p>2020 | Developed by GoIT Students </p>
+</div>
         </div>   
+        </div>   
+
+
     </footer>
 </body>
 
