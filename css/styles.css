@@ -159,6 +159,12 @@ img {
     
 /* button */
 .button {
+     font-size: 16px;
+     display: inline-block;
+}
+
+.button-primary {
+
     border: 1px solid var(--accent-color);
     padding: 10px 32px;
     
@@ -256,7 +262,8 @@ img {
     text-align: center;
 
 }
-.products img {
+.products img, 
+.team img {
     display: block;
     max-width: 100%;
     height: auto; 
@@ -390,7 +397,9 @@ img {
 .footer .social .link{
     color: var(--title-text-color)
 }
-
+.footer-list .button {
+    padding: 10px 28px 10px 29px;
+}
 
 .footer-copyright {
     display: block;
@@ -410,18 +419,55 @@ img {
 
 /* Styles for Portfolio */
 
+.porfolio-page {
+    color: var(--primary-text-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
 /*samples of projects*/
 
-.projects .list {
-    color: var(--primary-text-color);
-    background-color: var(--background-color);
 
+.portfolio .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background-color: var(--background-color);
+    /* border-top: 1px solid #ECECEC; */
+    
+
+}
+.filters {
+    padding-right:  0px;
+    padding-left: 0px;
+}
+.filters-list {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.button .button-secondary {
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--primary-text-color);
+}
+
+/* .filters .list {
+ 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
-}
+} */
 
 /* .projects .list:hover,
 .projects .list:focus {
