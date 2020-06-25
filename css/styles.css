@@ -21,7 +21,7 @@
 
    
 .container {
-    outline: solid tomato;  
+    /* outline: solid tomato;   */
     margin: 0 auto;
     padding: 0 15px;
     width: 1200px;
@@ -420,7 +420,7 @@ img {
 
 /* Styles for Portfolio */
 
-.porfolio-page {
+.portfolio-page {
     color: var(--primary-text-color);
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -431,7 +431,7 @@ img {
 /*samples of projects*/
 
 
-.porfolio .container {
+.portfolio .container {
     /* border: 1px solid #ECECEC; */
 
     padding-top: 94px;
