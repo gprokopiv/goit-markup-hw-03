@@ -510,6 +510,9 @@ margin-right: 8px;
     /* width: calc(100%-60px) / 3; 398*/
     margin-right: 30px;
     margin-bottom: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
     
 
     font-weight: 700;
@@ -537,10 +540,12 @@ margin-right: 8px;
     display: block;
     }
 .works-content {
-    padding:20px 24px;
+    padding: 20px 24px;
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     box-sizing: border-box;
     background: var(--title-text-color);
 }
