@@ -1,11 +1,11 @@
 
 :root {
     --primary-text-color: #212121;
+    --accent-color: #2196F3;
     --title-text-color: #ffffff; 
-    --accent-color:  #2196F3;
+    --primary-background-color: #ffffff; 
     --secondary-text-color: #757575;
-    --background-color: #F5F4FA;
-    --portfolio: #E5E5E5;
+    --secondary-background-color: #F5F4FA;
 }
 
 .home-page {
@@ -237,7 +237,7 @@ img {
    padding: 25px 100px;
    margin-bottom: 30px;
 
-    background: var(--background-color);
+    background: var(--secondary-background-color);
     border-radius: 4px;
 }
   
@@ -273,7 +273,7 @@ img {
 
 /* team list */
 .team {
-    background-color: var(--background-color);
+    background-color: var(--secondary-background-color);
 }
 .team .container {
     padding-top: 94px;
@@ -329,7 +329,7 @@ img {
     width: 170px;
     height: 90px;
     text-align: center;
-    background-color: var(--portfolio);
+    background-color: #E5E5E5;
 }
 .clients .image {
     padding-top: 20px;
@@ -419,15 +419,16 @@ img {
 
 
 /* Styles for Portfolio */
+.portfolio {
+    border-top: 1px solid #ECECEC;
 
+}
 .portfolio .container {
 
     padding-top: 94px;
     padding-bottom: 94px;
     color: var(--primary-text-color);
-    background-color: var(--portfolio);
 
-    border-top: 1px solid #ECECEC;
 
 
     font-family: "Roboto", sans-serif;
@@ -468,7 +469,7 @@ margin-right: 8px;
 .button-secondary {
     border-color: transparent;
     padding: 6px 22px;
-    background: var(--background-color);
+    background: var(--secondary-background-color);
     border-radius: 4px;
     list-style: none;
     /* margin-left: auto;
@@ -518,7 +519,7 @@ margin-right: 8px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
 
 }
 
@@ -548,6 +549,7 @@ margin-right: 8px;
     border-bottom-left-radius: 5px;
     box-sizing: border-box;
     background: var(--title-text-color);
+    font-size: inherit;
 }
 
 .works-title {
@@ -555,10 +557,10 @@ margin-right: 8px;
     margin-top: 0;
 
     font-weight: 700;
-    font-size: 18px;
+    font-size: inherit;
 
     line-height: 2;
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
 
 }
 .works-type {
@@ -571,7 +573,7 @@ margin-right: 8px;
 
 }
 .works-description {
-    font-size: 18px;
+    font-size: inherit;
 
     line-height: 1.55;
     letter-spacing: 0.03em;
@@ -596,7 +598,7 @@ margin-right: 8px;
 } 
 .example .text {
     color: var(--title-text-color);
-    background-color: var(--background-color);
+    background-color: var(--secondary-background-color);
 
 
     font-weight: 400;
